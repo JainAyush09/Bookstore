@@ -1,5 +1,7 @@
 # Bookstore
 **Online bookstore**
+
+**HTML CSS and JAVASCRIPT**
 * Every book is made available on this website 
 * speciality -->trending mangas and anime 
 * regestration and purchse forms 
