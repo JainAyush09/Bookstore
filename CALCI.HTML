@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+	<TITLE>
+	</TITLE>
+	<style>
+		input[type="button"]{
+border-radius:10px;
+background-color:yellow;
+color:black;
+border-color:brown;
+width:100%;}
+input[type="button"]:hover{
+
+background-color:orange;
+	</style>
+	<script>
+		function clr(){
+			document.getElementById("Display").value="";
+		}
+		function data(val){
+			document.getElementById("Display").value+=val;
+		}
+		function calculate(){
+			var x=document.getElementById("Display").value;
+			document.getElementById("Display").value=eval(x);
+
+
+		}
+	</script>
+</HEAD>
+<BODY  BACKGROUND="YELLOW.JPEG">
+	<CENTER>
+		<H1>CALCULATOR</H1>
+		<TABLE>
+			<TR>
+				<TD COLSPAN=3 ><INPUT TYPE="TEXT" border ="2px black"id ="Display" disabled></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="C" onclick="clr()" style="padding-left:20px;padding-right:20px" ></TD>
+			</TR>
+			<TR>
+				<TD><INPUT TYPE="BUTTON" VALUE="+" onclick="data('+')"></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="-" onclick="data('-')"></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="*"onclick="data('*')"></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="/"onclick="data('/')"></TD>
+			</TR>
+			
+			<TR>
+				<TD><INPUT TYPE="BUTTON" VALUE="1"onclick="data('1')"></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="2"onclick="data('2')"></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="3"onclick="data('3')"></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="4"onclick="data('4')"></TD>
+			</TR>
+			
+			<TR>
+				<TD><INPUT TYPE="BUTTON" VALUE="5"onclick="data('5')"></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="6"onclick="data('6')"></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="7"onclick="data('7')"></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="8"onclick="data('8')"></TD>
+			</TR>
+			
+			<TR>
+				<TD><INPUT TYPE="BUTTON" VALUE="9"onclick="data('9')"></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="0"onclick="data('0')"></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="."onclick="data('.')"></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="="onclick="calculate()"></TD>
+			</TR>
+
+
+	</CENTER>
+	</BODY>
+</HTML>

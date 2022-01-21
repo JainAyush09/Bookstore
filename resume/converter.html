@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+	<TITLE>
+	</TITLE>
+	<style>
+		input[type="button"]{
+border-radius:10px;
+background-color:yellow;
+color:BLACK;
+border-color:brown;
+width:100%;}
+input[type="button"]:hover{
+
+background-color:orange;
+	</style>
+	<script>
+		function clr(){
+			document.getElementById("Display").value="";
+		}
+		function data(val){
+			document.getElementById("Display").value+=val;
+		}
+		function calculate1(){
+			var x=document.getElementById("Display1").value;
+			document.getElementById("Display2").value=x*72;}
+		
+function calculate2(){
+			var x=document.getElementById("Display1").value;
+			
+			document.getElementById("Display3").value=x*110;}
+
+
+
+		
+			</script>
+</HEAD>
+<BODY BACKGROUND="BGNEW.JPG">
+	<CENTER>
+		<H1 COLOR><FONT COLOR ="BLACK">CONVERTER</H1>
+		<TABLE>
+			
+			<TR>
+				<TD COLSPAN=3 ><INPUT TYPE="TEXT" border ="2px black"id ="Display1" ></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="rupees" onclick="calculate()" style="padding-left:20px;padding-right:20px" ></TD>
+			</TR>
+			<TR>
+				<TD COLSPAN=3 ><INPUT TYPE="TEXT" border ="2px black"id ="Display2" disabled></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="dollars" onclick="calculate1()" style="padding-left:20px;padding-right:20px" ></TD>
+			</TR>
+			<TR>
+				<TD COLSPAN=3 ><INPUT TYPE="TEXT" border ="2px black"id ="Display3" disabled></TD>
+				<TD><INPUT TYPE="BUTTON" VALUE="pounds" onclick="calculate2()" style="padding-left:20px;padding-right:20px" ></TD>
+			</TR>

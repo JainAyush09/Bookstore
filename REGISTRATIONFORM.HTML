@@ -1,0 +1,105 @@
+
+
+
+<HTML>
+<STYLE>
+	H1{font-color:dodgerblue; ;font-size:30;font-style: bold; text-align: left;background-color: yellow;border:5px solid black;}
+	FORM{width :500px;background-color:pink;font-size:20px ;font-color:black;align-content:center;font-style:bold;border: 10px solid black ;background-position: center;font-style: bold;}
+
+	BODY{text-align: center;align-content: center; margin-left: 400px;font color: black; margin-right: 350px;background: yellow.jpeg;}
+	</STYLE>
+	<SCRIPT>
+		function validate()
+		{
+			var n=document.getElementById("name");
+			alert(n.value);
+			      var m=document.getElementById("mobile");
+var e=document.getElementById("email");
+
+var patt_name=/(^[A-Za-z]+\s[A-Za-z]+$)/;
+var patt_mobile=/^[7-9][0-9]{9}/;
+var patt_email=/^([A-za-z0-9\.-]+)@([A-za-z0-9-]+).([a-z]{2,3})$/;
+if(n.value=="")
+{
+alert("Name need value");
+n.style.border="2px solid red";
+m.style.border="2px solid red";
+return false;
+};
+			
+			
+			function declare()
+			{
+				var s=document.getElementById("submit");
+
+				alert("Data submitted!");
+			}
+			
+		}
+		
+		
+		
+	
+		
+	</SCRIPT>
+
+		
+<HEAD>
+<TITLE>REGISTRATION FORM FOR ONLINE LIBRARY</TITLE>
+</HEAD>
+<BODY BACKGROUND="YELLOW.JPEG" >
+
+	<H1> REGISTRATION FORM FOR ONLINE LIBRARY</H1>
+	
+	
+	<form name ="fname" onsubmit=" return validate()" >
+	1.FIRST NAME:<INPUT TYPE="TEXT" NAME="NAME" MAXLENGTH="30" SIZE="15" 
+	PLACEHOLDER ="enter first name" Id ="name"patt_name=/([A-Za-z+\sA-Za-z])/>
+	<BR><BR>
+	2.LAST NAME:<INPUT TYPE="TEXT" NAME="LNAME" MAXLENGTH="20" SIZE="15"REQUIRED PLACEHOLDER ="enter last name">
+	<BR><BR>
+	
+	male<INPUT TYPE ="RADIO" VALUE ="MALE">
+	female<INPUT TYPE="RADIO" VALUE ="FEMALE">
+	<BR><BR>
+	EMAILID:<INPUT TYPE ="TEXT"  NAME ="EMAILID" PLACEHOLDER ="enter email id" ID="EMAILID" REQUIRED Id ="email">
+	<BR><BR>
+    3.CUSTID :<INPUT TYPE ="TEXT" NAME ="CUSTOMERID" SIZE ="8"  PLACEHOLDER ="enter customer id">
+    <BR><BR>
+	4.CITY: <INPUT TYPE="TEXT" NAME ="CITY" MAXLENGTH ="30" SIZE="15" REQUIRED 
+	PLACEHOLDER ="ENTER CITY">
+	<BR><BR>
+	select languages:
+	<BR>
+	english:<INPUT TYPE ="RADIO" VALUE ="ENGLISH">
+	marathi:<INPUT TYPE ="RADIO" VALUE ="MARATHI">
+	hindi:<INPUT TYPE ="RADIO" VALUE ="HINDI">
+	japnese:<INPUT TYPE ="RADIO" VALUE ="JAPNESE">
+	<BR><BR>
+	5.CONTACT NUMBER:<INPUT TYPE="TEXT" NAME ="NUMBER" MAXLENGTH ="12" SIZE="15" REQUIRED
+	PLACEHOLDER ="enter contact number" patt_mobile Id="mobile">
+	<BR><BR>
+	6.USERNAME:<INPUT TYPE="TEXT" NAME ="FNAME" MAXLENGTH ="20" SIZE="15" REQUIRED 
+	PLACEHOLDER ="enter username" VALUE="USERID-" >
+	<BR><BR>
+
+	7.PASSWORD:<INPUT TYPE="TEXT" NAME ="FNAME" MAXLENGTH ="20" SIZE="15"REQUIRED 
+	PLACEHOLDER ="enter password">
+	<BR><BR>
+	8.check the box if you agree all the conditions provided by the owner <INPUT TYPE="CHECKBOX" NAME ="CONFIRMATION" CHECKED >
+	<BR><BR>
+     
+	<input type ="submit" name ="submit"  value="checkit" >
+	<INPUT TYPE="RESET" NAME ="reset" VALUE ="RESET">
+	<input type ="submit" name ="submit" Id ="submit" value="submit" onclick="declare()" >
+
+
+
+
+
+	<BR>
+	<BR><BR>
+
+
+</FORM></BODY>
+
